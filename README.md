@@ -74,4 +74,8 @@ Churn label (Yes/No)
 The project demonstrates a typical churn prediction pipeline including data preprocessing, feature engineering, and model training. The insights and model can help telecom providers proactively retain customers.
 
 ## Author
+Tajwinder Singh
+
+## Linkedin
 Tajwinder (Taj) Singh
+
