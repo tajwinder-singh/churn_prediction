@@ -1,0 +1,91 @@
+body{
+    background-image: url("/static/background.jpeg");
+    background-size: 1500px 875px;
+    /* Make it cover full screen */
+    background-position: top;
+    /* Center the image */
+    background-position: -128px -200px; /* shift X and Y to show specific detail */
+
+    /* Prevent tiling */
+    font-family: Arial, sans-serif;
+    color: white;
+    background-attachment: scroll; /* makes background move when scrolling */
+
+
+}
+
+#h1{
+    text-align: center ;
+    font-size: larger;
+    font-weight:bolder;
+    position:relative;
+    left:1.5%;
+    text-decoration:underline;
+    color: rgb(185, 212, 172);
+}
+
+form{
+    text-align: center;
+    font-weight: bolder;
+    left:500px;
+    color:rgb(251, 251, 251);
+    
+
+
+}
+#d1{position:relative; right: 35px;}
+#d3{position:relative; right: 35px;}
+#d2{position:relative; right: 12px;}
+#d4{position:relative; right: 18px;}
+#d5{position:relative; right: 40px;}
+#d6{position:relative; right: 10px;}
+#d7{position:relative; right: 37px;}
+#d8{position:relative; right: 51px;}
+#d9{position:relative; right: 29.5px;}
+#d10{position:relative; right: 32px;}
+#d11{position:relative; right: 21px;}
+#d12{position:relative; right: 43px;}
+#d13{position:relative; right: 40px;}
+#d14{position:relative; right: 25px;}
+#d15{position:relative; right: 67px;}
+#d16{position:relative; right: 9px;}
+#d17{position:relative; right: 9px;}
+#d18{position:relative; right: 6px;}
+#d19{position:relative; right: 19px;}
+
+#t20{position:relative; right: 117px;}
+#t18{position:relative; left:19px;}
+#t19{position:relative; left:45px;}
+#t17{position:relative; left:20px;}
+#t16{position: relative; left:25px;}
+#t15{position: relative; left:81px;}
+#t14{position: relative; left: 12px;}
+#t13{position: relative; left: 42px;}
+#t12{position: relative; left: 48px;}
+#t11{position: relative; left: 6.5px;}
+#t10{position: relative; left: 30px;}
+#t9{position: relative; left: 22px;}
+#t8{position: relative; left:18px;}
+#t7{position:relative; left:31px;}
+#t6{position: relative; left: 28px;}
+#t5{position: relative; left: 87px;}
+#t4{position:relative; left:45px;}
+#t3{position: relative; left:79px;}
+#t2{position:relative; left: 30px; }
+#t1{position:relative; left:78px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

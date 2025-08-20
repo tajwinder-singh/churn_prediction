@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="h1"> <big><big><big><big>Customer Churn Prediction</big></big></big></big></h1><br>
+    </header>
+
+    <main>
+        <div id="forms" ><form action="/predict" method="post">
+            <div  id="d1">Gender: <input id="t1" type="text" name="gender" placeholder="male/female"></div><br>
+            <div  id="d2">Senior Citizen: <input id="t2" type="text" name="SeniorCitizen" placeholder="Yes/No"></div><br>
+            <div  id="d3">Partner: <input id="t3" type="text" name="Partner" placeholder="Yes/No"></div><br>
+            <div  id="d4">Dependents: <input id="t4" type="text" name="Dependents" placeholder="Yes/No"></div><br>
+            <div  id="d5">Tenure: <input id="t5" type="number" name="tenure"></div><br>
+            <div id="d6"> Phone Service: <input id="t6" type="text" name="PhoneService" placeholder="Yes/No"></div><br>
+            <div   id="d7">Multiple Lines: <select id="t7" name="MultipleLines">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No phone service">No phone service</option>
+                </select></div><br>
+            <div  id="d8">Internet Service: <select id="t8" name="InternetService">
+                <option value="DSL">DSL</option>
+                <option value="Fiber optic">Fiber optic</option>
+                <option value="No">No</option>
+            </select></div><br>
+            <div  id="d9">Online Security:  <select id="t9" name="OnlineSecurity">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No internet service">No internet service</option>
+                </select></div><br>
+            <div  id="d10">Online Backup: <select id="t10" name="OnlineBackup">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No internet service">No internet service</option>
+                </select></div> <br>
+            <div  id="d11">Device Protection: <select id="t11" name="DeviceProtection">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No internet service">No internet service</option>
+                </select></div><br>
+            <div  id="d12">Tech Support:<select id="t12" name="TechSupport">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No internet service">No internet service</option>
+                </select></div><br>
+            <div  id="d13">Streaming TV: <select id="t13" name="StreamingTV">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No internet service">No internet service</option>
+                </select></div> <br>
+            <div  id="d14">Streaming Movies: <select id="t14" name="StreamingMovies">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No internet service">No internet service</option> 
+                </select></div><br>
+            <div  id="d15">Contract: <select id="t15" name="Contract">
+                <option value="Month-to-month">Month-to-month</option>
+                <option value="One year">One year</option>
+                <option value="Two year">Two year</option>
+                </select></div><br>
+            <div  id="d16">Paperless Billing:<input id="t16" type="text" name="PaperlessBilling" placeholder="Yes/No"></div> <br>
+            <div  id="d17">Payment Method: <select id="t17" name="PaymentMethod">
+                <option value="Electronic check">Electronic check</option>
+                <option value="Mailed checkOne year">Mailed check</option>
+                <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                <option value="Credit card (automatic)">Credit card (automatic)</option>
+                </select></div><br>
+            <div  id="d18">Monthly Charges: <input id="t18" type="number" name="MonthlyCharges"></div><br>
+            <div id="d19">  Total Charges: <input id="t19" type="number" name="TotalCharges"><br><br>
+            <input id="t20" type="submit" placeholder="Predict"></div> 
+        </form></div>
+    </main>
+
+</body>
+
+</html>

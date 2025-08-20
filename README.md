@@ -1,81 +1,84 @@
-# Churn Prediction Project
+# Customer Churn Prediction Project
 
 ## Overview
-This project performs a comprehensive data analysis and predictive modeling task on a customer churn dataset. The objective is to understand the customer behavior patterns that lead to churn and build a machine learning model that can predict if a customer is likely to leave the service.
+This project analyzes customer behavior and predicts churn for a telecom company. It includes data preprocessing, feature engineering, machine learning modeling, and a Flask-based web application deployed on AWS Elastic Beanstalk for real-time predictions.
 
 ## Dataset Description
-The dataset includes customer-level information from a telecom company, such as:
+The dataset includes customer-level information such as:
 
-Demographics (gender, senior citizen status)
-
-Service details (internet, phone, streaming)
-
-Account information (contract type, monthly charges, tenure)
-
-Churn label (Yes/No)
+- **Demographics:** gender, senior citizen status  
+- **Service details:** internet, phone, streaming  
+- **Account information:** contract type, monthly charges, tenure  
+- **Churn label:** Yes/No  
 
 ## Tools and Libraries Used
-- Python
-
-- Pandas
-
-- NumPy
-
-- Matplotlib
-
-- Seaborn
-
-- Scikit-learn
+- Python 3.12  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn 1.7.1  
+- Flask  
+- Gunicorn  
+- AWS Elastic Beanstalk  
 
 ## Steps Performed
-- Data Inspection
 
-- Loaded dataset using Pandas
+### 1. Data Inspection
+- Loaded dataset using Pandas  
+- Explored data with `.info()` and `.describe()`  
+- Identified missing values and data types  
 
-- Used .info() and .describe() to understand structure and statistics
+### 2. Data Cleaning
+- Handled missing values in `TotalCharges`  
+- Converted non-numeric columns to numeric where necessary  
+- Removed unnecessary rows/columns  
 
-- Identified null values and data types
+### 3. Feature Engineering
+- Encoded categorical features  
+- Split data into features and target (churn label)  
+- Scaled numerical columns when needed  
 
-- Data Cleaning
+### 4. Model Building
+- Applied classification models such as Logistic Regression  
+- Hyperparameter tuning to optimize performance  
+- Used train-test split for evaluation  
+- Measured performance using accuracy, precision, recall  
 
-- Handled missing values in the TotalCharges column
+### 5. Key Insights
+- Customers with longer contracts are less likely to churn  
+- Higher monthly charges correlate with churn  
+- Majority of customers who churned had tenure up to 18 months  
 
-- Converted non-numeric types to numeric
+### 6. Web App Deployment
+- Created `app.py` using Flask to serve the churn prediction model  
+- Saved preprocessing objects and trained model as pickles (e.g., `ct_ohe.pickle`, `standard_scaler.pickle`, `best_model.pickle`) using **Scikit-learn 1.7.1**  
+- Created `requirements.txt` for dependencies  
+- Added `Procfile` for Gunicorn: web: gunicorn app:application
+- Initialized AWS Elastic Beanstalk environment:  
+- Platform: Python 3.12 running on 64bit Amazon Linux 2023  
+- Region: ap-south-1  
+- Deployed using `eb init`, `eb create`, and `eb deploy`  
+- Verified the EB URL and tested endpoints  
 
-- Removed unnecessary rows and columns
+## Deployment Instructions for Future Users  
+1. Clone the repository.  
+2. Install dependencies:  
+   pip install -r requirements.txt
+3. Initialize Elastic Beanstalk:
+   eb init
 
-- Feature Engineering
+Choose Python 3.12 on 64bit Amazon Linux 2023
+Choose your region (ap-south-1)
 
-- Encoded categorical features
+4. Create the environment and deploy:
+   eb create <environment-name>
+   eb deploy
 
-- Split data into features and labels
-
-- Scaled numerical columns if needed
-
-- Model Building
-
-- Hyperparameter tuning
-
-- Applied classification models such as logistic regression
-
-- Used train-test split for evaluation
-
-- Measured performance with accuracy, precision, recall
-
-## Insights
-
-- Customers with longer contracts are less likely to churn
-
-- Higher monthly charges often correlate with churn
-
-- Majority of customers who are about to churn have used services for up to 18 months.
-
-## Conclusion
-The project demonstrates a typical churn prediction pipeline including data preprocessing, feature engineering, and model training. The insights and model can help telecom providers proactively retain customers.
+5. Access the app using the provided EB URL.
 
 ## Author
 Tajwinder Singh
 
-## Linkedin
-Tajwinder (Taj) Singh
-
+## LinkedIn
+https://www.linkedin.com/in/tajwinder-singh-?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDuXVqgdxTaycCeffmt54iw%3D%3D
