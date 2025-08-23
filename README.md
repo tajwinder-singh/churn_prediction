@@ -61,6 +61,12 @@ The dataset includes customer-level information such as:
 - Deployed using `eb init`, `eb create`, and `eb deploy`  
 - Verified the EB URL and tested endpoints  
 
+### App link: 
+http://churn-env.eba-vptrq2cx.ap-south-1.elasticbeanstalk.com/
+
+### Dashboard:
+Uploading Screen Recording 2025-08-22 182424.mp4…
+
 ## Deployment Instructions for Future Users  
 1. Clone the repository.  
 2. Install dependencies:  
