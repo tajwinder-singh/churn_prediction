@@ -65,7 +65,9 @@ The dataset includes customer-level information such as:
 http://churn-env.eba-vptrq2cx.ap-south-1.elasticbeanstalk.com/
 
 ### Dashboard:
-Uploading Screen Recording 2025-08-22 182424.mp4…
+https://github.com/user-attachments/assets/a847d669-9bf2-4434-9f91-378fedab7bbb
+
+ 182424.mp4…
 
 ## Deployment Instructions for Future Users  
 1. Clone the repository.  
