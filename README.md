@@ -1,5 +1,11 @@
 # Customer Churn Prediction Project
 
+---
+
+https://github.com/user-attachments/assets/a847d669-9bf2-4434-9f91-378fedab7bbb
+
+ ---
+ 
 ## Overview
 This project analyzes customer behavior and predicts churn for a telecom company. It includes data preprocessing, feature engineering, machine learning modeling, and a Flask-based web application deployed on AWS Elastic Beanstalk for real-time predictions.
 
@@ -64,10 +70,8 @@ The dataset includes customer-level information such as:
 ### App link: 
 http://churn-env.eba-vptrq2cx.ap-south-1.elasticbeanstalk.com/
 
-### Dashboard:
-https://github.com/user-attachments/assets/a847d669-9bf2-4434-9f91-378fedab7bbb
 
- 182424.mp4…
+
 
 ## Deployment Instructions for Future Users  
 1. Clone the repository.  
